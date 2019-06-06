@@ -6,12 +6,9 @@ class GoodReadsSpider(scrapy.Spider):
 
     #reuests
     def start_requests(self):
-        urls = {
-            'https://www.goodreads.com/quotes?page=1'
-        }
+        url = 'https://www.goodreads.com/quotes?page=1'
 
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+        yield scrapy.Request(url=url, callback=self.parse)
 
     #response
     def parse(self, response):
@@ -21,3 +18,10 @@ class GoodReadsSpider(scrapy.Spider):
                 'author': quote.xpath(".//div[@class='quoteText']/child::span").extract_first(),
                 'tags': quote.xpath(".//div[@class='greyText smallText left']/a/text()").extract()
             }
+
+        # /quotes?page=2
+        next_page = response.selector.xpath("//a[@class='next_page']/@href").extract_first()
+
+        if next_page is not None:
+            next_page_link = response.urljoin(next_page)
+            yield scrapy.Request(url=next_page_link, callback=self.parse)
