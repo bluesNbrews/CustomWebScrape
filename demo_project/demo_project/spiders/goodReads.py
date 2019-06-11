@@ -1,4 +1,6 @@
 import scrapy
+from scrapy.loader import ItemLoader
+from demo_project.items import QuoteItem
 
 class GoodReadsSpider(scrapy.Spider):
     #identity
@@ -13,11 +15,11 @@ class GoodReadsSpider(scrapy.Spider):
     #response
     def parse(self, response):
         for quote in response.selector.xpath("//div[@class='quote']"):
-            yield {
-                'text': quote.xpath(".//div[@class='quoteText']/text()[1]").extract_first(),
-                'author': quote.xpath(".//div[@class='quoteText']/child::span").extract_first(),
-                'tags': quote.xpath(".//div[@class='greyText smallText left']/a/text()").extract()
-            }
+            loader = ItemLoader(item=QuoteItem(), selector=quote, response=response)
+            loader.add_xpath('text', ".//div[@class='quoteText']/text()[1]")
+            loader.add_xpath('author', ".//div[@class='quoteText']/child::span")
+            loader.add_xpath('tags', ".//div[@class='greyText smallText left']/a")
+            yield loader.load_item()
 
         # /quotes?page=2
         next_page = response.selector.xpath("//a[@class='next_page']/@href").extract_first()
