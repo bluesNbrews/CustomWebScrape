@@ -6,7 +6,7 @@ class GoodReadsSpider(scrapy.Spider):
     #identity
     name = 'goodReads'
 
-    #reuests
+    #requests
     def start_requests(self):
         url = 'https://www.goodreads.com/quotes?page=1'
 
@@ -14,7 +14,8 @@ class GoodReadsSpider(scrapy.Spider):
 
     #response
     def parse(self, response):
-        for quote in response.selector.xpath("//div[@class='quote']"):
+        quotes = response.selector.xpath("//div[@class='quote']")
+        for quote in quotes:
             loader = ItemLoader(item=QuoteItem(), selector=quote, response=response)
             loader.add_xpath('text', ".//div[@class='quoteText']/text()[1]")
             loader.add_xpath('author', ".//div[@class='quoteText']/child::span")
