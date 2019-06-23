@@ -1,0 +1,16 @@
+Date: Sun, 23 Jun 2019 15:46:33 GMT
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache
+Content-Encoding: gzip
+Set-Cookie: _tuts_session=cb97d4579e4f2c7f55786d13c355e996; domain=.tutsplus.com; path=/; expires=Sun, 07 Jul 2019 15:46:33 -0000; secure; HttpOnly
+Status: 200 OK
+Vary: Accept,Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Phusion Passenger 6.0.2
+X-Request-Id: 40e19384-070c-4d68-8d25-61c4b8232737
+X-Runtime: 0.473094
+X-Xss-Protection: 1; mode=block
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Cf-Ray: 4eb7986cc8f5579f-IAD
