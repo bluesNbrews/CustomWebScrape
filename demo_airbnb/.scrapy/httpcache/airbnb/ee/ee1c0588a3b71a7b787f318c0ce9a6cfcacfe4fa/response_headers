@@ -1,0 +1,30 @@
+Server: nginx
+Content-Type: text/plain; charset=utf-8
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=3600, public
+Referrer-Policy: same-origin
+X-Ua-Compatible: IE=Edge,chrome=1
+Etag: W/"eec14415ec71021814af83eaa5a06496"
+Server-Timing: total;dur=233
+Content-Security-Policy: default-src 'self' https: blob:; child-src * blob:; connect-src 'self' https: wss: *.amap.com *.inspectlet.com; font-src 'self' data: *.muscache.com fonts.gstatic.com use.typekit.net; img-src 'self' https: data: *.inspectlet.com; media-src 'self' https:; script-src 'self' 'unsafe-eval' a0.muscache.com cdn.siftscience.com ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com a.cdn.intentmedia.net maps.googleapis.com ajax.googleapis.com *.g.doubleclick.net www.google.com www.gstatic.com smartlock.google.com accounts.google.com app.link cdn.branch.io api.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com widget.us.criteo.com *.gbc.criteo.net ethn.io s.yimg.jp api.geetest.com cdn.ampproject.org storage.googleapis.com/workbox-cdn/ tagmanager.google.com pay.google.com blob: webapi.amap.com restapi.amap.com *.inspectlet.com 'nonce-c346ace2613594348c39c1d40813a8'; style-src 'self' https: 'unsafe-inline'; report-uri /tracking/csp?action=robots&controller=sitemaps&report_only=false&req_uuid=2b73afcc-1ede-458c-ad30-479de547b319&version=704e50a1cd221b4d5737a849987881acea6ddc1e
+Content-Security-Policy-Report-Only: default-src blob: *; child-src blob: *; connect-src blob: *; font-src 'self' data: *.muscache.com fonts.gstatic.com use.typekit.net; img-src 'self' https: data: *.inspectlet.com; script-src 'self' 'unsafe-eval' webpack.localhost.airbnb.com jira.airbnb.biz *.g.doubleclick.net cdn.siftscience.com ss.musthird.com t1.musthird.com bat.bing.com connect.facebook.net www.google-analytics.com www.googleadservices.com tpc.googlesyndication.com www.googletagmanager.com maps.googleapis.com ajax.googleapis.com app.link cdn.branch.io api.branch.io bam.nr-data.net js-agent.newrelic.com sslwidget.criteo.com static.criteo.net dis.criteo.com widget.us.criteo.com ethn.io blob: webapi.amap.com restapi.amap.com *.inspectlet.com cdn.ampproject.org/v0.js cdn.ampproject.org/v0/ a.alipayobjects.com gw.alipayobjects.com static.t.agrant.cn t.agrantsem.com ditu.google.com *.muscache.cn *.muscache.com ss.musthird.cn www.google.com www.gstatic.com b92.yahoo.co.jp mc.yandex.ru wcs.naver.net static.matterport.com a.cdn.intentmedia.net s.yimg.jp icm.aexp-static.com checkout.americanexpress.com www.paypalobjects.com smartlock.google.com accounts.google.com tagmanager.google.com; style-src * blob: 'unsafe-inline'; report-uri /tracking/csp?action=robots&controller=sitemaps&report_only=true&req_uuid=2b73afcc-1ede-458c-ad30-479de547b319&version=704e50a1cd221b4d5737a849987881acea6ddc1e
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Encoding: gzip
+X-Envoy-Upstream-Service-Time: 247
+Strict-Transport-Security: max-age=10886400; includeSubdomains
+X-Server-Name: www.airbnb.com
+Via: 1.1 varnish
+Via: 1.1 varnish
+Accept-Ranges: bytes
+Date: Sat, 13 Jul 2019 21:50:34 GMT
+Age: 545
+Set-Cookie: cdn_exp_6006dbfd9073e1a4a=control; expires=Wed, 11 Sep 2019 21:50:34 GMT; domain=.airbnb.com; path=/
+Set-Cookie: cdn_exp_e89717572f377eda0=treatment; expires=Wed, 11 Sep 2019 21:50:34 GMT; domain=.airbnb.com; path=/
+Set-Cookie: cdn_exp_e34749a788e5ce2bf=treatment; expires=Wed, 11 Sep 2019 21:50:34 GMT; domain=.airbnb.com; path=/
+X-Served-By: cache-bwi5126-BWI, cache-atl6227-ATL
+X-Cache: HIT, MISS
+X-Cache-Hits: 1, 0
+X-Timer: S1563054635.805437,VS0,VE14
+Vary: Accept-Encoding

@@ -1,0 +1,15 @@
+Server: nginx
+Content-Type: text/html
+X-Airbnb-Fluffy: {"request_id":"bb689c5c-0d0e-4c65-b99a-feb0afb2ecc9"}
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Accept-Ranges: bytes
+Via: 1.1 varnish
+Via: 1.1 varnish
+Date: Sat, 13 Jul 2019 21:50:38 GMT
+X-Served-By: cache-bwi5125-BWI, cache-atl6227-ATL
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1563054638.333134,VS0,VE19
+Set-Cookie: cache_state=0; domain=.airbnb.com; path=/;  Secure

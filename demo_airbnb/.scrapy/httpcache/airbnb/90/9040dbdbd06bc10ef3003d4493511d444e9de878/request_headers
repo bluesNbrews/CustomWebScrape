@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/1.5.1 (+https://scrapy.org)
+Accept-Encoding: gzip,deflate
+Cookie: cdn_exp_6006dbfd9073e1a4a=control; cdn_exp_e89717572f377eda0=treatment; cdn_exp_e34749a788e5ce2bf=treatment
